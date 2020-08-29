@@ -3,6 +3,23 @@ var timeSecond = document.getElementById('timeSecond');
 var greeting = document.getElementById('greeting');
 var userName = document.getElementById('userName');
 var userFocus = document.getElementById('userFocus');
+function navslide() {
+    var mobile = document.querySelector('.mobile');
+    var nav = document.querySelector('.nav-links');
+    var navLinks = document.querySelectorAll('.nav-links li');
+    mobile.addEventListener('click', function () {
+        nav.classList.toggle('nav-active');
+        for (var i = 0; i < navLinks.length; i++) {
+            if (navLinks[i].style.animation) {
+                navLinks[i].style.animation = '';
+            }
+            else {
+                navLinks[i].style.animation = "navLinkFade 0.5s ease forwards " + (i / 4 + .4) + "s";
+            }
+        }
+        mobile.classList.toggle('toggle');
+    });
+}
 function showTime() {
     var today = new Date(), hour = today.getHours(), min = today.getMinutes(), second = today.getSeconds();
     var amPm = hour >= 12 ? 'PM' : 'AM';
@@ -59,3 +76,4 @@ userName.addEventListener('blur', setName);
 showTime();
 setGreet();
 getName();
+navslide();

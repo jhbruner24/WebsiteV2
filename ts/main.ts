@@ -4,6 +4,24 @@ const greeting = document.getElementById('greeting');
 const userName = document.getElementById('userName');
 const userFocus = document.getElementById('userFocus');
 
+function navslide() {
+    const mobile = document.querySelector('.mobile');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
+
+    mobile.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        for(let i=0; i<navLinks.length; i++) {
+            if ((navLinks[i] as HTMLElement).style.animation) {
+                (navLinks[i] as HTMLElement).style.animation = '';
+            } else {
+                (navLinks[i] as HTMLElement).style.animation = `navLinkFade 0.5s ease forwards ${i / 4 + .4}s`;
+            }
+        }
+        mobile.classList.toggle('toggle');
+    });
+}
+
 function showTime() {
     let today = new Date(),
     hour = today.getHours(),
@@ -66,6 +84,8 @@ function setName(e) {
 userName.addEventListener('keypress', setName);
 userName.addEventListener('blur', setName);
 
+
 showTime();
 setGreet();
 getName();
+navslide();

@@ -10,16 +10,34 @@
 </head>
 
 <body>
-    <div class="flex-container">
-        <div><time id="time"></time></div>
-        <div><time id="timeSecond"></time></div>
+    <nav>
+        <div class="logo">
+            <h4>The Nav</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+        </ul>
+        <div class="mobile">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="body-container">
+        <div class="time-container">
+            <div><time id="time"></time></div>
+            <div><time id="timeSecond"></time></div>
+        </div>
+        <h1>
+            <span id="greeting"></span>
+            <span id="userName" contenteditable="true"></span>
+        </h1>
+        <script src="ts/main.js"></script>
     </div>
-    <h1>
-        <span id="greeting"></span>
-        <span id="userName" contenteditable="true">Jace</span>
-    </h1>
-    <h2>What is your focus for today</h2>
-    <h2 id="userFocus" contenteditable="true">Fun.</h2>
-    <script src="ts/main.js"></script>
 </body>
 </html>
