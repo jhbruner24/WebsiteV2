@@ -6,38 +6,282 @@
     <meta name="viewport" content="width=device.width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="ts/parallax.min.js"></script>
+    <title>Jace Bruner</title>
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/png">
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <h4>The Nav</h4>
-        </div>
-        <ul class="nav-links">
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-        </ul>
-        <div class="mobile">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
+    <div class="navbarleftbarrier"></div>
+    <nav class="navbar">
+        <a href="#experiences"><div class="navbar-item">Experiences</div></a>
+        <a href="#abilities"><div class="navbar-item">Abilities</div></a>
+        <a href="#projects"><div class="navbar-item">Projects</div></a>
+        <a href="#contact"><div class="navbar-item">Contact</div></a>
+        <a href="https://jacobbruner.netlify.app/" target="_blank"><div class="navbar-item">Old Version</div></a>
     </nav>
-    <div class="body-container">
-        <div class="time-container">
-            <div><time id="time"></time></div>
-            <div><time id="timeSecond"></time></div>
+    <div class="navbarrightbarrier"></div>
+
+    <div class=htmlPage>
+        <section class = "parallax-window0" data-z-index="1" data-parallax="scroll" data-image-src="img/cover.jpg"> 
+            <div class="index-container">
+                <svg id="jaceBruner" width="500" height="100" viewBox="0 0 860 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M61.632 5.63199V79.792C61.632 88.048 59.088 94.672 54 99.664C48.912 104.56 42.192 107.008 33.84 107.008C25.392 107.008 18.624 104.512 13.536 99.52C8.44799 94.432 5.90399 87.52 5.90399 78.784H19.008C19.104 83.68 20.352 87.664 22.752 90.736C25.248 93.808 28.944 95.344 33.84 95.344C38.736 95.344 42.384 93.904 44.784 91.024C47.184 88.048 48.384 84.304 48.384 79.792V5.63199H61.632Z" stroke="#006E66" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                    <path d="M82.5514 66.256C82.5514 58.192 84.1834 51.136 87.4474 45.088C90.7114 38.944 95.1754 34.192 100.839 30.832C106.599 27.472 112.983 25.792 119.991 25.792C126.903 25.792 132.903 27.28 137.991 30.256C143.079 33.232 146.871 36.976 149.367 41.488V27.088H162.615V106H149.367V91.312C146.775 95.92 142.887 99.76 137.703 102.832C132.615 105.808 126.663 107.296 119.847 107.296C112.839 107.296 106.503 105.568 100.839 102.112C95.1754 98.656 90.7114 93.808 87.4474 87.568C84.1834 81.328 82.5514 74.224 82.5514 66.256ZM149.367 66.4C149.367 60.448 148.167 55.264 145.767 50.848C143.367 46.432 140.103 43.072 135.975 40.768C131.943 38.368 127.479 37.168 122.583 37.168C117.687 37.168 113.223 38.32 109.191 40.624C105.159 42.928 101.943 46.288 99.5434 50.704C97.1434 55.12 95.9434 60.304 95.9434 66.256C95.9434 72.304 97.1434 77.584 99.5434 82.096C101.943 86.512 105.159 89.92 109.191 92.32C113.223 94.624 117.687 95.776 122.583 95.776C127.479 95.776 131.943 94.624 135.975 92.32C140.103 89.92 143.367 86.512 145.767 82.096C148.167 77.584 149.367 72.352 149.367 66.4Z" stroke="#006E66" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                    <path d="M179.864 66.4C179.864 58.24 181.496 51.136 184.76 45.088C188.024 38.944 192.536 34.192 198.296 30.832C204.152 27.472 210.824 25.792 218.312 25.792C228.008 25.792 235.976 28.144 242.216 32.848C248.552 37.552 252.728 44.08 254.744 52.432H240.632C239.288 47.632 236.648 43.84 232.712 41.056C228.872 38.272 224.072 36.88 218.312 36.88C210.824 36.88 204.776 39.472 200.168 44.656C195.56 49.744 193.256 56.992 193.256 66.4C193.256 75.904 195.56 83.248 200.168 88.432C204.776 93.616 210.824 96.208 218.312 96.208C224.072 96.208 228.872 94.864 232.712 92.176C236.552 89.488 239.192 85.648 240.632 80.656H254.744C252.632 88.72 248.408 95.2 242.072 100.096C235.736 104.896 227.816 107.296 218.312 107.296C210.824 107.296 204.152 105.616 198.296 102.256C192.536 98.896 188.024 94.144 184.76 88C181.496 81.856 179.864 74.656 179.864 66.4Z" stroke="#006E66" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                    <path d="M344.229 63.52C344.229 66.016 344.085 68.656 343.797 71.44H280.725C281.205 79.216 283.845 85.312 288.645 89.728C293.541 94.048 299.445 96.208 306.357 96.208C312.021 96.208 316.725 94.912 320.469 92.32C324.309 89.632 326.997 86.08 328.533 81.664H342.645C340.533 89.248 336.309 95.44 329.973 100.24C323.637 104.944 315.765 107.296 306.357 107.296C298.869 107.296 292.149 105.616 286.197 102.256C280.341 98.896 275.733 94.144 272.373 88C269.013 81.76 267.333 74.56 267.333 66.4C267.333 58.24 268.965 51.088 272.229 44.944C275.493 38.8 280.053 34.096 285.909 30.832C291.861 27.472 298.677 25.792 306.357 25.792C313.845 25.792 320.469 27.424 326.229 30.688C331.989 33.952 336.405 38.464 339.477 44.224C342.645 49.888 344.229 56.32 344.229 63.52ZM330.693 60.784C330.693 55.792 329.589 51.52 327.381 47.968C325.173 44.32 322.149 41.584 318.309 39.76C314.565 37.84 310.389 36.88 305.781 36.88C299.157 36.88 293.493 38.992 288.789 43.216C284.181 47.44 281.541 53.296 280.869 60.784H330.693Z" stroke="#006E66" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                    <path d="M450.172 54.304C453.82 54.88 457.132 56.368 460.108 58.768C463.18 61.168 465.58 64.144 467.308 67.696C469.132 71.248 470.044 75.04 470.044 79.072C470.044 84.16 468.748 88.768 466.156 92.896C463.564 96.928 459.772 100.144 454.78 102.544C449.884 104.848 444.076 106 437.356 106H399.916V5.63199H435.916C442.732 5.63199 448.54 6.78399 453.34 9.08799C458.14 11.296 461.74 14.32 464.14 18.16C466.54 22 467.74 26.32 467.74 31.12C467.74 37.072 466.108 42.016 462.844 45.952C459.676 49.792 455.452 52.576 450.172 54.304ZM413.02 48.976H435.052C441.196 48.976 445.948 47.536 449.308 44.656C452.668 41.776 454.348 37.792 454.348 32.704C454.348 27.616 452.668 23.632 449.308 20.752C445.948 17.872 441.1 16.432 434.764 16.432H413.02V48.976ZM436.204 95.2C442.732 95.2 447.82 93.664 451.468 90.592C455.116 87.52 456.94 83.248 456.94 77.776C456.94 72.208 455.02 67.84 451.18 64.672C447.34 61.408 442.204 59.776 435.772 59.776H413.02V95.2H436.204Z" stroke="#006E66" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                    <path d="M501.333 39.904C503.637 35.392 506.901 31.888 511.125 29.392C515.445 26.896 520.677 25.648 526.821 25.648V39.184H523.365C508.677 39.184 501.333 47.152 501.333 63.088V106H488.229V27.088H501.333V39.904Z" stroke="#006E66" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                    <path d="M611.931 27.088V106H598.827V94.336C596.331 98.368 592.827 101.536 588.315 103.84C583.899 106.048 579.003 107.152 573.627 107.152C567.483 107.152 561.963 105.904 557.067 103.408C552.171 100.816 548.283 96.976 545.403 91.888C542.619 86.8 541.227 80.608 541.227 73.312V27.088H554.187V71.584C554.187 79.36 556.155 85.36 560.091 89.584C564.027 93.712 569.403 95.776 576.219 95.776C583.227 95.776 588.747 93.616 592.779 89.296C596.811 84.976 598.827 78.688 598.827 70.432V27.088H611.931Z" stroke="#006E66" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                    <path d="M672.505 25.648C682.105 25.648 689.881 28.576 695.833 34.432C701.785 40.192 704.761 48.544 704.761 59.488V106H691.801V61.36C691.801 53.488 689.833 47.488 685.897 43.36C681.961 39.136 676.585 37.024 669.769 37.024C662.857 37.024 657.337 39.184 653.209 43.504C649.177 47.824 647.161 54.112 647.161 62.368V106H634.057V27.088H647.161V38.32C649.753 34.288 653.257 31.168 657.673 28.96C662.185 26.752 667.129 25.648 672.505 25.648Z" stroke="#006E66" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                    <path d="M798.166 63.52C798.166 66.016 798.022 68.656 797.734 71.44H734.662C735.142 79.216 737.782 85.312 742.582 89.728C747.478 94.048 753.382 96.208 760.294 96.208C765.958 96.208 770.662 94.912 774.406 92.32C778.246 89.632 780.934 86.08 782.47 81.664H796.582C794.47 89.248 790.246 95.44 783.91 100.24C777.574 104.944 769.702 107.296 760.294 107.296C752.806 107.296 746.086 105.616 740.134 102.256C734.278 98.896 729.67 94.144 726.31 88C722.95 81.76 721.27 74.56 721.27 66.4C721.27 58.24 722.902 51.088 726.166 44.944C729.43 38.8 733.99 34.096 739.846 30.832C745.798 27.472 752.614 25.792 760.294 25.792C767.782 25.792 774.406 27.424 780.166 30.688C785.926 33.952 790.342 38.464 793.414 44.224C796.582 49.888 798.166 56.32 798.166 63.52ZM784.63 60.784C784.63 55.792 783.526 51.52 781.318 47.968C779.11 44.32 776.086 41.584 772.246 39.76C768.502 37.84 764.326 36.88 759.718 36.88C753.094 36.88 747.43 38.992 742.726 43.216C738.118 47.44 735.478 53.296 734.806 60.784H784.63Z" stroke="#006E66" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                    <path d="M828.567 39.904C830.871 35.392 834.135 31.888 838.359 29.392C842.679 26.896 847.911 25.648 854.055 25.648V39.184H850.599C835.911 39.184 828.567 47.152 828.567 63.088V106H815.463V27.088H828.567V39.904Z" stroke="#006E66" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                    </svg>
+                <hr class="index-line">
+                <svg id="interactiveResume" width="300" height="100" viewBox="0 0 1375 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.104 12.216V112.584H3V12.216H16.104Z" stroke="#006E66" stroke-width="3" mask="url(#path-1-outside-1)"/>
+                    <path d="M76.8855 32.232C86.4855 32.232 94.2615 35.16 100.214 41.016C106.165 46.776 109.141 55.128 109.141 66.072V112.584H96.1815V67.944C96.1815 60.072 94.2135 54.072 90.2775 49.944C86.3415 45.72 80.9655 43.608 74.1495 43.608C67.2375 43.608 61.7175 45.768 57.5895 50.088C53.5575 54.408 51.5415 60.696 51.5415 68.952V112.584H38.4375V33.672H51.5415V44.904C54.1335 40.872 57.6375 37.752 62.0535 35.544C66.5655 33.336 71.5095 32.232 76.8855 32.232Z" stroke="#006E66" stroke-width="3" mask="url(#path-1-outside-1)"/>
+                    <path d="M146.531 44.472V90.984C146.531 94.824 147.347 97.56 148.979 99.192C150.611 100.728 153.443 101.496 157.475 101.496H167.123V112.584H155.315C148.019 112.584 142.547 110.904 138.899 107.544C135.251 104.184 133.427 98.664 133.427 90.984V44.472H123.203V33.672H133.427V13.8H146.531V33.672H167.123V44.472H146.531Z" stroke="#006E66" stroke-width="3" mask="url(#path-1-outside-1)"/>
+                    <path d="M255 70.104C255 72.6 254.856 75.24 254.568 78.024H191.496C191.976 85.8 194.616 91.896 199.416 96.312C204.312 100.632 210.216 102.792 217.128 102.792C222.792 102.792 227.496 101.496 231.24 98.904C235.08 96.216 237.768 92.664 239.304 88.248H253.416C251.304 95.832 247.08 102.024 240.744 106.824C234.408 111.528 226.536 113.88 217.128 113.88C209.64 113.88 202.92 112.2 196.968 108.84C191.112 105.48 186.504 100.728 183.144 94.584C179.784 88.344 178.104 81.144 178.104 72.984C178.104 64.824 179.736 57.672 183 51.528C186.264 45.384 190.824 40.68 196.68 37.416C202.632 34.056 209.448 32.376 217.128 32.376C224.616 32.376 231.24 34.008 237 37.272C242.76 40.536 247.176 45.048 250.248 50.808C253.416 56.472 255 62.904 255 70.104ZM241.464 67.368C241.464 62.376 240.36 58.104 238.152 54.552C235.944 50.904 232.92 48.168 229.08 46.344C225.336 44.424 221.16 43.464 216.552 43.464C209.928 43.464 204.264 45.576 199.56 49.8C194.952 54.024 192.312 59.88 191.64 67.368H241.464Z" stroke="#006E66" stroke-width="3" mask="url(#path-1-outside-1)"/>
+                    <path d="M285.401 46.488C287.705 41.976 290.969 38.472 295.193 35.976C299.513 33.48 304.745 32.232 310.889 32.232V45.768H307.433C292.745 45.768 285.401 53.736 285.401 69.672V112.584H272.297V33.672H285.401V46.488Z" stroke="#006E66" stroke-width="3" mask="url(#path-1-outside-1)"/>
+                    <path d="M321.12 72.84C321.12 64.776 322.752 57.72 326.016 51.672C329.28 45.528 333.744 40.776 339.408 37.416C345.168 34.056 351.552 32.376 358.56 32.376C365.472 32.376 371.472 33.864 376.56 36.84C381.648 39.816 385.44 43.56 387.936 48.072V33.672H401.184V112.584H387.936V97.896C385.344 102.504 381.456 106.344 376.272 109.416C371.184 112.392 365.232 113.88 358.416 113.88C351.408 113.88 345.072 112.152 339.408 108.696C333.744 105.24 329.28 100.392 326.016 94.152C322.752 87.912 321.12 80.808 321.12 72.84ZM387.936 72.984C387.936 67.032 386.736 61.848 384.336 57.432C381.936 53.016 378.672 49.656 374.544 47.352C370.512 44.952 366.048 43.752 361.152 43.752C356.256 43.752 351.792 44.904 347.76 47.208C343.728 49.512 340.512 52.872 338.112 57.288C335.712 61.704 334.512 66.888 334.512 72.84C334.512 78.888 335.712 84.168 338.112 88.68C340.512 93.096 343.728 96.504 347.76 98.904C351.792 101.208 356.256 102.36 361.152 102.36C366.048 102.36 370.512 101.208 374.544 98.904C378.672 96.504 381.936 93.096 384.336 88.68C386.736 84.168 387.936 78.936 387.936 72.984Z" stroke="#006E66" stroke-width="3" mask="url(#path-1-outside-1)"/>
+                    <path d="M418.432 72.984C418.432 64.824 420.064 57.72 423.328 51.672C426.592 45.528 431.104 40.776 436.864 37.416C442.72 34.056 449.392 32.376 456.88 32.376C466.576 32.376 474.544 34.728 480.784 39.432C487.12 44.136 491.296 50.664 493.312 59.016H479.2C477.856 54.216 475.216 50.424 471.28 47.64C467.44 44.856 462.64 43.464 456.88 43.464C449.392 43.464 443.344 46.056 438.736 51.24C434.128 56.328 431.824 63.576 431.824 72.984C431.824 82.488 434.128 89.832 438.736 95.016C443.344 100.2 449.392 102.792 456.88 102.792C462.64 102.792 467.44 101.448 471.28 98.76C475.12 96.072 477.76 92.232 479.2 87.24H493.312C491.2 95.304 486.976 101.784 480.64 106.68C474.304 111.48 466.384 113.88 456.88 113.88C449.392 113.88 442.72 112.2 436.864 108.84C431.104 105.48 426.592 100.728 423.328 94.584C420.064 88.44 418.432 81.24 418.432 72.984Z" stroke="#006E66" stroke-width="3" mask="url(#path-1-outside-1)"/>
+                    <path d="M526.781 44.472V90.984C526.781 94.824 527.597 97.56 529.229 99.192C530.861 100.728 533.693 101.496 537.725 101.496H547.373V112.584H535.565C528.269 112.584 522.797 110.904 519.149 107.544C515.501 104.184 513.677 98.664 513.677 90.984V44.472H503.453V33.672H513.677V13.8H526.781V33.672H547.373V44.472H526.781Z" stroke="#006E66" stroke-width="3" mask="url(#path-1-outside-1)"/>
+                    <path d="M570.018 20.856C567.522 20.856 565.41 19.992 563.682 18.264C561.954 16.536 561.09 14.424 561.09 11.928C561.09 9.432 561.954 7.32 563.682 5.592C565.41 3.864 567.522 3 570.018 3C572.418 3 574.434 3.864 576.066 5.592C577.794 7.32 578.658 9.432 578.658 11.928C578.658 14.424 577.794 16.536 576.066 18.264C574.434 19.992 572.418 20.856 570.018 20.856ZM576.354 33.672V112.584H563.25V33.672H576.354Z" stroke="#006E66" stroke-width="3" mask="url(#path-1-outside-1)"/>
+                    <path d="M628.063 100.488L652.544 33.672H666.511L635.552 112.584H620.287L589.328 33.672H603.44L628.063 100.488Z" stroke="#006E66" stroke-width="3" mask="url(#path-1-outside-1)"/>
+                    <path d="M751.406 70.104C751.406 72.6 751.262 75.24 750.974 78.024H687.902C688.382 85.8 691.022 91.896 695.822 96.312C700.718 100.632 706.622 102.792 713.534 102.792C719.198 102.792 723.902 101.496 727.646 98.904C731.486 96.216 734.174 92.664 735.71 88.248H749.822C747.71 95.832 743.486 102.024 737.15 106.824C730.814 111.528 722.942 113.88 713.534 113.88C706.046 113.88 699.326 112.2 693.374 108.84C687.518 105.48 682.91 100.728 679.55 94.584C676.19 88.344 674.51 81.144 674.51 72.984C674.51 64.824 676.142 57.672 679.406 51.528C682.67 45.384 687.23 40.68 693.086 37.416C699.038 34.056 705.854 32.376 713.534 32.376C721.022 32.376 727.646 34.008 733.406 37.272C739.166 40.536 743.582 45.048 746.654 50.808C749.822 56.472 751.406 62.904 751.406 70.104ZM737.87 67.368C737.87 62.376 736.766 58.104 734.558 54.552C732.35 50.904 729.326 48.168 725.486 46.344C721.742 44.424 717.566 43.464 712.958 43.464C706.334 43.464 700.67 45.576 695.966 49.8C691.358 54.024 688.718 59.88 688.046 67.368H737.87Z" stroke="#006E66" stroke-width="3" mask="url(#path-1-outside-1)"/>
+                    <path d="M859.942 112.584L836.038 71.544H820.198V112.584H807.094V12.216H839.494C847.078 12.216 853.462 13.512 858.646 16.104C863.926 18.696 867.862 22.2 870.454 26.616C873.046 31.032 874.342 36.072 874.342 41.736C874.342 48.648 872.326 54.744 868.294 60.024C864.358 65.304 858.406 68.808 850.438 70.536L875.638 112.584H859.942ZM820.198 61.032H839.494C846.598 61.032 851.926 59.304 855.478 55.848C859.03 52.296 860.806 47.592 860.806 41.736C860.806 35.784 859.03 31.176 855.478 27.912C852.022 24.648 846.694 23.016 839.494 23.016H820.198V61.032Z" stroke="#006E66" stroke-width="3" mask="url(#path-1-outside-1)"/>
+                    <path d="M966.703 70.104C966.703 72.6 966.559 75.24 966.271 78.024H903.199C903.679 85.8 906.319 91.896 911.119 96.312C916.015 100.632 921.919 102.792 928.831 102.792C934.495 102.792 939.199 101.496 942.943 98.904C946.783 96.216 949.471 92.664 951.007 88.248H965.119C963.007 95.832 958.783 102.024 952.447 106.824C946.111 111.528 938.239 113.88 928.831 113.88C921.343 113.88 914.623 112.2 908.671 108.84C902.815 105.48 898.207 100.728 894.847 94.584C891.487 88.344 889.807 81.144 889.807 72.984C889.807 64.824 891.439 57.672 894.703 51.528C897.967 45.384 902.527 40.68 908.383 37.416C914.335 34.056 921.151 32.376 928.831 32.376C936.319 32.376 942.943 34.008 948.703 37.272C954.463 40.536 958.879 45.048 961.951 50.808C965.119 56.472 966.703 62.904 966.703 70.104ZM953.167 67.368C953.167 62.376 952.063 58.104 949.855 54.552C947.647 50.904 944.623 48.168 940.783 46.344C937.039 44.424 932.863 43.464 928.255 43.464C921.631 43.464 915.967 45.576 911.263 49.8C906.655 54.024 904.015 59.88 903.343 67.368H953.167Z" stroke="#006E66" stroke-width="3" mask="url(#path-1-outside-1)"/>
+                    <path d="M1011.94 113.88C1005.89 113.88 1000.46 112.872 995.664 110.856C990.864 108.744 987.072 105.864 984.288 102.216C981.504 98.472 979.968 94.2 979.68 89.4H993.216C993.6 93.336 995.424 96.552 998.688 99.048C1002.05 101.544 1006.42 102.792 1011.79 102.792C1016.78 102.792 1020.72 101.688 1023.6 99.48C1026.48 97.272 1027.92 94.488 1027.92 91.128C1027.92 87.672 1026.38 85.128 1023.31 83.496C1020.24 81.768 1015.49 80.088 1009.06 78.456C1003.2 76.92 998.4 75.384 994.656 73.848C991.008 72.216 987.84 69.864 985.152 66.792C982.56 63.624 981.264 59.496 981.264 54.408C981.264 50.376 982.464 46.68 984.864 43.32C987.264 39.96 990.672 37.32 995.088 35.4C999.504 33.384 1004.54 32.376 1010.21 32.376C1018.94 32.376 1026 34.584 1031.38 39C1036.75 43.416 1039.63 49.464 1040.02 57.144H1026.91C1026.62 53.016 1024.94 49.704 1021.87 47.208C1018.9 44.712 1014.86 43.464 1009.78 43.464C1005.07 43.464 1001.33 44.472 998.544 46.488C995.76 48.504 994.368 51.144 994.368 54.408C994.368 57 995.184 59.16 996.816 60.888C998.544 62.52 1000.66 63.864 1003.15 64.92C1005.74 65.88 1009.3 66.984 1013.81 68.232C1019.47 69.768 1024.08 71.304 1027.63 72.84C1031.18 74.28 1034.21 76.488 1036.7 79.464C1039.3 82.44 1040.64 86.328 1040.74 91.128C1040.74 95.448 1039.54 99.336 1037.14 102.792C1034.74 106.248 1031.33 108.984 1026.91 111C1022.59 112.92 1017.6 113.88 1011.94 113.88Z" stroke="#006E66" stroke-width="3" mask="url(#path-1-outside-1)"/>
+                    <path d="M1129.22 33.672V112.584H1116.11V100.92C1113.62 104.952 1110.11 108.12 1105.6 110.424C1101.19 112.632 1096.29 113.736 1090.91 113.736C1084.77 113.736 1079.25 112.488 1074.35 109.992C1069.46 107.4 1065.57 103.56 1062.69 98.472C1059.91 93.384 1058.51 87.192 1058.51 79.896V33.672H1071.47V78.168C1071.47 85.944 1073.44 91.944 1077.38 96.168C1081.31 100.296 1086.69 102.36 1093.51 102.36C1100.51 102.36 1106.03 100.2 1110.07 95.88C1114.1 91.56 1116.11 85.272 1116.11 77.016V33.672H1129.22Z" stroke="#006E66" stroke-width="3" mask="url(#path-1-outside-1)"/>
+                    <path d="M1246.24 32.232C1252.38 32.232 1257.86 33.528 1262.66 36.12C1267.46 38.616 1271.25 42.408 1274.03 47.496C1276.82 52.584 1278.21 58.776 1278.21 66.072V112.584H1265.25V67.944C1265.25 60.072 1263.28 54.072 1259.34 49.944C1255.5 45.72 1250.27 43.608 1243.65 43.608C1236.83 43.608 1231.41 45.816 1227.38 50.232C1223.34 54.552 1221.33 60.84 1221.33 69.096V112.584H1208.37V67.944C1208.37 60.072 1206.4 54.072 1202.46 49.944C1198.62 45.72 1193.39 43.608 1186.77 43.608C1179.95 43.608 1174.53 45.816 1170.5 50.232C1166.46 54.552 1164.45 60.84 1164.45 69.096V112.584H1151.34V33.672H1164.45V45.048C1167.04 40.92 1170.5 37.752 1174.82 35.544C1179.23 33.336 1184.08 32.232 1189.36 32.232C1195.98 32.232 1201.84 33.72 1206.93 36.696C1212.02 39.672 1215.81 44.04 1218.3 49.8C1220.51 44.232 1224.16 39.912 1229.25 36.84C1234.34 33.768 1240 32.232 1246.24 32.232Z" stroke="#006E66" stroke-width="3" mask="url(#path-1-outside-1)"/>
+                    <path d="M1371.7 70.104C1371.7 72.6 1371.56 75.24 1371.27 78.024H1308.2C1308.68 85.8 1311.32 91.896 1316.12 96.312C1321.02 100.632 1326.92 102.792 1333.83 102.792C1339.5 102.792 1344.2 101.496 1347.94 98.904C1351.78 96.216 1354.47 92.664 1356.01 88.248H1370.12C1368.01 95.832 1363.78 102.024 1357.45 106.824C1351.11 111.528 1343.24 113.88 1333.83 113.88C1326.34 113.88 1319.62 112.2 1313.67 108.84C1307.82 105.48 1303.21 100.728 1299.85 94.584C1296.49 88.344 1294.81 81.144 1294.81 72.984C1294.81 64.824 1296.44 57.672 1299.7 51.528C1302.97 45.384 1307.53 40.68 1313.38 37.416C1319.34 34.056 1326.15 32.376 1333.83 32.376C1341.32 32.376 1347.94 34.008 1353.7 37.272C1359.46 40.536 1363.88 45.048 1366.95 50.808C1370.12 56.472 1371.7 62.904 1371.7 70.104ZM1358.17 67.368C1358.17 62.376 1357.06 58.104 1354.86 54.552C1352.65 50.904 1349.62 48.168 1345.78 46.344C1342.04 44.424 1337.86 43.464 1333.26 43.464C1326.63 43.464 1320.97 45.576 1316.26 49.8C1311.66 54.024 1309.02 59.88 1308.34 67.368H1358.17Z" stroke="#006E66" stroke-width="3" mask="url(#path-1-outside-1)"/>
+                    </svg>
+            </div>
+            <a href="#profile" class="scrolldown">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <!-- <button class="next-page-button"><span class="glyphicon glyphicon-chevron-down"></span></button> -->
+        </section>
+        <section>
+            <span class="title"><a name="profile">Profile</a></span>
+            <div class="description">
+                Software Engineer<span class="divider"> | </span> 
+                Sunset Chaser<span class="divider"> | </span> 
+                Rock Stacker<span class="divider"> | </span> 
+                Professional Athlete<span class="divider"> | </span>
+                Project Enthusiast<span class="divider"> | </span> 
+                Smash Prodigy<span class="divider"> | </span> 
+                Guitar Student<span class="divider">
+             </div>
+             <div class="section-container">
+                <hr>
+                <div class="about-container">
+                    <div class="about-column">
+                        <span class="sub-header">About me</span>
+                        <span class="about-column-description">I am a software engineer that loves to dive into all kinds of projects. I am always seeking to learn more in my quest to become a jack of all trades.</span>
+                    </div>
+                    <div class="about-image-column">
+                        <img class="profile-pic" src="img/jace.jpg">
+                    </div>
+                    <div class="about-column">
+                        <span class="sub-header">Details</span>
+                        <span class="about-column-description"><b>Name:</b><br>Jace Bruner<br><b>Age:</b><br>21<br><b>Location:</b><br>Berkeley, CA<br></span>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax-window2" data-parallax="scroll" data-z-index="1" data-image-src="img/second.jpg">
+                <a href="#experiences" class="scrolldown">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <span class="title"><a name="experiences">Experiences</a></span>
+             <div class="section-container">
+                <hr>
+                <div class="experience">
+                    <span class="sub-header">Industry</span>
+                </div>
+                 <div class="experience">
+                    <div class="experience-label" id="relativity">
+                        <span class="experience-name"><b>Relativity</b></span>
+                        <span class="experience-date">May 2020 - Aug. 2020</span>
+                    </div>
+                    <div class="experience-column-description">
+                        <div class="experience-column-description-title"><b>Software Engineer Intern</b></div>
+                        <div class="experience-column-description-content">Relativity was the company of choice for my second internship. Here I was able to 
+                            gain both an understanding and appreciation for how applications are deployed in the cloud. I worked on a team focused on Kubernetes and the primary function of my internship
+                            was to reduce time to production through implementing CI/CD and developing a Kubernetes operator which interacts with Azure Container Registries to decrease image turnaround time.
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="experience-label" id="advent">
+                        <span class="experience-name"><b>SS&C Advent</b></span>
+                        <span class="experience-date">Jun. 2019 - Aug. 2019</span>
+                    </div>
+                    <div class="experience-column-description">
+                        <div class="experience-column-description-title"><b>Software Engineer Intern</b></div>
+                        <div class="experience-column-description-content">At SS&C Advent I worked full stack and learned what it means to be a software engineer beyond college. Here I gained valuable
+                            experience using tools such as JIRA, Bitbucket, Jenkins, VSCode, Postman, GridGain, and HTML dev tools all while working in Agile development with daily scrums. I was tasked with
+                            integrating into a growing team with an expansive code base.
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="experience">
+                    <span class="sub-header">Education</span>
+                </div>
+                 <div class="experience">
+                    <div class="experience-label" id="ucbseal">
+                        <span class="experience-name"><b>University of California, Berkeley</b></span>
+                        <span class="experience-date">Aug 2017 - Present</span>
+                    </div>
+                    <div class="experience-column-description">
+                        <div class="experience-column-description-title"><b>Electrical Engineering and Computer Science</b></div>
+                        <div class="experience-column-description-content">I came to Cal undeclared in the College of Engineering never having taken a computer science course in my life. Do to unforseen 
+                            circumstances, I found myself in <i>The Structure and Interpretation of Computer Programs</i> (CS61A) a week into my first semester. From that moment onward I knew I had a calling to computer science
+                            and have actively sought opportunities to apply my knowledge since then. One particularly enjoyable non coding applications of my knowledge involved calculating the runtime required to make various combinations
+                            of google groups and then using the principle of least priveledge to assign priveledges to each group.
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <div class="parallax-window2" data-parallax="scroll" data-z-index="1" data-image-src="img/third.jpg">
+                <a href="#projects" class="scrolldown">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <span class="title"><a name="projects">Projects</a></span>
+            <div class="section-container">
+                <hr>
+                <div class="project-row">
+                    <div class="project-column">
+                        <div class="img-wrapper" onclick="window.open('https://github.com/jhbruner24/Die-Table');">
+                            <div class="img-banner-overlay" id="die-table-banner"></div>
+                            <div class="img-text-overlay" id="die-table-title">Die Table</div>
+                            <img class="project-image" src="img/placeholder-die-table.jpg">
+                            <div class="project-text-container">
+                                <div class="project-title">Die Table</div>
+                                <div class="project-description"><hr>Foldable and rolling die table with sesimic sensors that triggers lights and scoreboard when impact with the table is detected</div>
+                            </div>
+                        </div>
+                        <div class="image-hover"></div>
+                    </div>
+                    <div class="project-column">
+                        <div class="img-wrapper" onclick="window.open('https://github.com/jhbruner24/FreeRiceBot');">
+                            <div class="img-banner-overlay" id="rice-banner"></div>
+                            <div class="img-text-overlay" id="rice-title">Free Rice</div>
+                            <img class="project-image" src="img/rice.jpg">
+                            <div class="project-text-container">
+                                <div class="project-title">Free Rice</div>
+                                <div class="project-description"><hr>Python script that logs in to https://freerice.com/ and solves multiplaction problems to earn free rice</div>
+                            </div>
+                        </div>
+                        <div class="image-hover"></div>
+                    </div>
+                </div>
+                <div class="project-row">
+                    <div class="project-column">
+                        <div class="img-wrapper" onclick="window.open('https://glenn2763.github.io/proj3cs188/');">
+                            <div class="img-banner-overlay" id="pacman-banner"></div>
+                            <div class="img-text-overlay" id="pacman-title">Learning Pac-Man</div>
+                            <img class="project-image" src="img/pacman.png">
+                            <div class="project-text-container">
+                                <div class="project-title">Learning Pac-Man</div>
+                                <div class="project-description"><hr>(School Project) This project uses artificial intellegence to build a more intelligent pac-man agent.</div>
+                            </div>
+                        </div>
+                        <div class="image-hover"></div>
+                    </div>
+                    <div class="project-column">
+                        <div class="img-wrapper" onclick="window.open('https://glenn2763.github.io/CS184-Final-Project/index.html');">
+                            <div class="img-banner-overlay" id="fluid-banner"></div>
+                            <div class="img-text-overlay" id="fluid-title">Particle Fluid Simulation</div>
+                            <img class="project-image" src="img/fluid.png">
+                            <div class="project-text-container">
+                                <div class="project-title">Particle Fluid Simulation</div>
+                                <div class="project-description"><hr>(School Project) Created a particle based fluid simulation.</div>
+                            </div>
+                        </div>
+                        <div class="image-hover"></div>
+                    </div>
+                </div>
+                <div class="project-row">
+                    <div class="project-column">
+                        <div class="img-wrapper" onclick="window.open('https://binarymarbles.weebly.com/');">
+                            <div class="img-banner-overlay" id="binary-marbles-banner"></div>
+                            <div class="img-text-overlay" id="binary-marbles-title">Binary Marbles</div>
+                            <img class="project-image" src="img/binary-marbles.jpg">
+                            <div class="project-text-container">
+                                <div class="project-title">Binary Marbles</div>
+                                <div class="project-description"><hr>Binary Marbles is an interactive example of a calculator,
+                                    an intro to binary and teaches other computer scinece concepts. </div>
+                            </div>
+                        </div>
+                        <div class="image-hover"></div>
+                    </div>
+                    <div class="project-column">
+                        <div class="img-wrapper" onclick="window.open('https://github.com/jhbruner24/ImageEncrypter');">
+                            <div class="img-banner-overlay" id="image-encrypter-banner"></div>
+                            <div class="img-text-overlay" id="image-encrypter-title">Image Encrypter</div>
+                            <img class="project-image" src="img/image-encrypter.png">
+                            <div class="project-text-container">
+                                <div class="project-title">Image Encrypter</div>
+                                <div class="project-description"><hr>Image Encrypter is a fun way to hide messages in images by modifying the two
+                                least significant bits of each R, G, and B value. </div>
+                            </div>
+                        </div>
+                        <div class="image-hover"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax-window2" data-parallax="scroll" data-z-index="1" data-image-src="img/fourth.jpg">
+                <a href="#contact" class="scrolldown">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </section>
+        <div class="contact-container">
+            <span class="title"><a name="contact">Contact</a></span>
+            <div class="contact-hr"><hr></div>
+            <div class="media-container">
+                <div class="media-links">
+                    
+                    <a class="media" href="https://www.linkedin.com/in/jace-bruner/">
+                        <div class="media-icon" id="linkedin-icon"><i class="fa fa-linkedin"></i></div>
+                        <div class="media-label" id="linkedin-label">linkedin.com/in/jace-bruner</div>
+                    </a>
+                
+
+                    <a class="media" href="https://github.com/jhbruner24">
+                        <div class="media-icon" id="github-icon"><i class="fa fa-github"></i></div>
+                        <div class="media-label" id="github-label">github.com/jhbruner24</div>
+                    </a>
+
+                    <a class="media" href="mailto:jhbruner24@gmail.com">
+                        <div class="media-icon" id="email-icon"><i class="fa fa-envelope-square"></i></div>
+                        <div class="media-label" id="email-label">jhbruner24@gmail.com</div>
+                    </a> 
+                    
+                </div>
+            </div>
         </div>
-        <h1>
-            <span id="greeting"></span>
-            <span id="userName" contenteditable="true"></span>
-        </h1>
         <script src="ts/main.js"></script>
     </div>
+
 </body>
 </html>
