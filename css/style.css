@@ -742,5 +742,9 @@ section {
     z-index: 10;
 }
 
+.navbar:hover {
+    cursor: pointer;
+}
+
 @media(max-width: 700px) {
 }
