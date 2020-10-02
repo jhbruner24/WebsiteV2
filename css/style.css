@@ -704,11 +704,11 @@ section {
     height: 300px;
     width: 140px;
     position: fixed;
-    z-index: 1;
+    z-index: 99;
     top: 30px;
     left: calc(98% - 130px);
     overflow-x: hidden;
-    background-color: rgba(200, 200, 200, 0.5);
+    background-color: rgba(200, 200, 200, 0.8);
 }
 
 .navbar-item {
@@ -729,7 +729,7 @@ section {
     position: fixed;
     top: 30px;
     left: calc(98% - 130px);
-    z-index: 10;
+    z-index: 100;
 }
 
 .navbarrightbarrier {
@@ -739,11 +739,15 @@ section {
     position: fixed;
     top: 30px;
     left: 98%;
-    z-index: 10;
+    z-index: 100;
 }
 
 .navbar:hover {
     cursor: pointer;
+}
+
+.navbar-item:hover {
+    background-color: rgb(0, 110, 102);
 }
 
 @media(max-width: 700px) {
