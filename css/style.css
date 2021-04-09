@@ -331,6 +331,12 @@ section {
     line-height: 25px;
 }
 
+.img-wrapper:hover #satisfying-stars-banner{
+    z-index: -3;
+}
+.img-wrapper:hover #satisfying-stars-title{
+    z-index: -3;
+}
 .img-wrapper:hover img{
     filter: blur(2px);
 }
