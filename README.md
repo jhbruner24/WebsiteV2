@@ -1,2 +1,2 @@
 # WebsiteV2
-Updated personal website
+Personal website
